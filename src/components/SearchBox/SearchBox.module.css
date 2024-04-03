@@ -1,0 +1,10 @@
+.inputBlock {
+  margin-bottom: 20px;
+  border: 2px orange solid;
+  padding-bottom: 7px;
+}
+
+.input::placeholder {
+    color: orange;
+}
+
