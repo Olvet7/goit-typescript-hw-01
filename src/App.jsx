@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "./redux/contactsOps";
 import toast, { Toaster } from "react-hot-toast";
 import { selectError, selectLoading } from "./redux/contactsSlice";
+import Temp from "./temp";
+// import Temp from "./temp";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -30,6 +32,7 @@ export default function App() {
       <h2>Phonebook</h2>
       {loading && <p>Loading...</p>}
       {error && <p>Error message</p>}
+      <Temp/>
       <ContactForm />
       <SearchBox />
       <ContactList />
